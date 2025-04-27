@@ -1,357 +1,335 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="./packages/css/styles.css">
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+		<link rel="icon" type="image/jpeg" href="assets/img/UKlogo.jpg">
 
-        <title>Uttkarsh's Portfolio</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Utkarsh Sharma</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="uil uil-estate nav__icon"></i>Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i>About
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i>Skills
-                            </a>
-                        
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i>Projects                                
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i>Contact                               
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
-                <div class="nav__btns">
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
+   
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/uttkarsh-sharma16/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                             </a>
-                            
-                            </a>
-                            <a href="https://github.com/Uttkarshsh" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                        </div>
+		<!-- box icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-                        <div class="home__data">
-                            <h1 class="home__title">Hi, I'm Uttkarsh Sharma</h1>
-                            <h3 class="home__subtitle">Cloud Computing Enthusiast</h3>
-                            <p class="home__description">Experienced in AWS, Azure, and GCP, with a strong background in backend development and cloud security.</p>
-                            <a href="#contact" class="button button--flex home__button">
-                                Contact Me<i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll Down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My Introduction</span>
+		<title>Uttkarsh Sharma | Portfolio</title>
+	</head>
+	<body>
+		<!-- header -->
+		<header class="l-header">
+			<nav class="nav bd-grid">
+				<div>
+					<a href="#" class="nav__logo">
+						<img src="assets/img/UKlogo.jpg" alt="Uttkarsh Logo" class="nav__logo-img">
+					</a>
+				</div>
 
-                <div class="about__container container grid">
-                    <img src="" alt="" class="about__img">
-                    <div class="about__data">
-                        <p class="about__description">
-                            Pre-final year CS student at UPES specializing in Cloud Computing. Proficient in AWS, GCP, C++, and Cloud Development, with a passion for building scalable cloud solutions and leveraging AI/ML to solve real-world challenges. Always exploring, learning, and innovating. Let’s connect! 🚀
-                        </p>
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">fresher</span>
-                                <span class="about__info-name"> <br> experience</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">03+</span>
-                                <span class="about__info-name">Completed <br> certifications</span>
-                            </div>
-                           
-                        </div>
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+						<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+						<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+						<li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+						<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+						<li class="nav__item"><a href="Resumes.pdf" class="nav__link" target="_blank">Resume</a></li>
+					</ul>
+				</div>
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="bx bx-menu"></i>
+				</div>
+			</nav>
+		</header>
 
-                        <div class="about__buttons">
-                            <a href="" target="_blank" class="button button--flex">
-                                Download CV<i class="uil uil-download-alt button__icon"></i>
-                            </a>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
+		<main class="l-main">
+			<!-- home -->
+			<section class="home bd-grid" id="home">
+				<div class="home__data">
+					<h1 class="home__title">Hi,<br />I'm <span class="home__title-color">Uttkarsh Sharma</span></h1>
+					<p class="home__description">A seasoned cloud computing specialist with a strong track record in architecting and implementing scalable, secure, and high-performance cloud solutions. Proficient in optimizing cloud infrastructure to enhance efficiency, reliability, and security while aligning with business objectives.</p>
+					<a href="#contact" class="button">Contact</a>
+				</div>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My technical level</span>
-            
-                <div class="skills__container container grid">
-                    <div>
-                        <!--==================== SKILL-1 ====================-->
-                        <div class="skills__content skills__open">
-                            <div class="skills__list grid">
-                                
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">AWS</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__aws"></span>
-                                    </div>
-                                </div>
-            
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">SQL</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__sql"></span>
-                                    </div>
-                                </div>
-            
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Docker</h3>
-                                        <span class="skills__number">50%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__docker"></span>
-                                    </div>
-                                </div>
-            
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Java</h3>
-                                        <span class="skills__number">50%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__java"></span>
-                                    </div>
-                                </div>
-            
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
-            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
+				<div class="home__social">
+					<a href="https://www.linkedin.com/in/uttkarsh-sharma16/" class="home__social-icon" target="_blank"
+						><i class="bx bxl-linkedin"></i
+					></a>
+					<a href="https://github.com/Uttkarshsh" class="home__social-icon" target="_blank"><i class="bx bxl-github"></i></a>
+				</div>
 
-              <!--==================== QUALIFICATION ====================-->
-        
-      
-        <!--==================== SERVICES ====================-->
-        
-        
-        <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
+				<div class="home__img">
+					<svg
+						class="home__blob"
+						viewBox="0 0 479 467"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<mask id="mask0" mask-type="alpha">
+							<path
+								d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+							/>
+						</mask>
+						<g mask="url(#mask0)">
+							<path
+								d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+							/>
+							<image class="home__blob-img" x="50" y="60" href="assets/img/download.png" />
+						</g>
+					</svg>
+				</div>
+				 
+			</section>
 
-            <h2 class="section__title">Projects</h2>
-            <span class="section__subtitle">Most recent works</span>
+			<div style="height: 30px;"></div>
+			 
+ 
+			<!-- ABOUT -->
+			<section class="about section" id="about">
+				<h2 class="section-title">About</h2>
+			
+				<div class="about__container bd-grid">
+					<div class="about__img">
+						<img src="assets/img/download.png" alt="Uttkarsh" />
+					</div>
+			
+					<div>
+						<h2 class="about__subtitle">I'm Uttkarsh</h2>
+						<p class="about__text">
+							Cloud computing enthusiast with expertise in AWS, Docker, Kubernetes, and AI-driven automation. Passionate about designing scalable architectures and optimizing cloud workflows.
+						</p>
+						
+						<p class="about__text">
+							I specialize in building fault-tolerant, high-performance systems that drive efficiency, security, and innovation in cloud environments.
+						</p>
+						
+						<p class="about__text">
+							Currently exploring AI-powered cloud solutions, serverless architectures, and container orchestration to redefine digital transformation.
+						</p>
+						
+						<p class="about__text">
+							Outside of tech, I'm an avid football player and a strategist—whether on the field or in problem-solving. I thrive in dynamic environments where quick thinking and adaptability drive success. When I'm not optimizing cloud workflows, you'll find me immersed in books on leadership and innovation, constantly seeking ways to sharpen my mindset.
+						</p>
+						
+						<p class="about__text">
+							Let's connect and collaborate on cutting-edge cloud solutions that shape the future! 🚀
+					</div>
+				</div>
+			</section>
+			
+			<style>
+				.about__text {
+					margin-bottom: 15px; /* Adds spacing between paragraphs */
+				}
+			</style>
+	 
+			<div style="height: 30px;"></div>
+ 
 
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
+			<!-- SKILLS -->
+			<section class="skills section" id="skills">
+				<h2 class="section-title">Skills</h2>
+				<div class="skills__container bd-grid">
+					<div>
+						<p class="skills__text">
+							Experienced in building scalable cloud solutions with expertise in backend development and DevOps. 
+							 Skilled in database optimization, deployment automation, and creating seamless user experiences through innovation.</p>
+							 <div class="skills__container">
+								<div class="skills__column">
+									<div class="skills__data">
+										<div class="skills__names">
+											<i class="bx bxl-html5 skills__icon"></i>
+											<span class="skills__name">HTML5</span>
+										</div>
+										<div class="skills__bar skills__html"></div>
+										<div>
+											<span class="skills__percentage">75%</span>
+										</div>
+									</div>
+									<div class="skills__data">
+										<div class="skills__names">
+											<i class="bx bxl-css3 skills__icon"></i>
+											<span class="skills__name">CSS</span>
+										</div>
+										<div class="skills__bar skills__css"></div>
+										<div>
+											<span class="skills__percentage">85%</span>
+										</div>
+									</div>
+									<div class="skills__data">
+										<div class="skills__names">
+											<i class="bx bxl-aws skills__icon"></i>
+											<span class="skills__name">AWS</span>
+										</div>
+										<div class="skills__bar skills__aws"></div>
+										<div>
+											<span class="skills__percentage">65%</span>
+										</div>
+									</div>
+									<div class="skills__data">
+										<div class="skills__names">
+											<i class="bx bxl-python skills__icon"></i>
+											<span class="skills__name">PYTHON</span>
+										</div>
+										<div class="skills__bar skills__python"></div>
+										<div>
+											<span class="skills__percentage">80%</span>
+										</div>
+									</div>
+								</div>
+							
+								<div class="skills__column">
+									<div class="skills__data">
+										<div class="skills__names">
+											<i class="bx bxl-docker skills__icon"></i>
+											<span class="skills__name">DOCKER</span>
+										</div>
+										<div class="skills__bar skills__docker"></div>
+										<div>
+											<span class="skills__percentage">75%</span>
+										</div>
+									</div>
+									<div class="skills__data">
+										<div class="skills__names">
+											<i class="bx bxl-mongodb skills__icon"></i>
+											<span class="skills__name">MONGO DB</span>
+										</div>
+										<div class="skills__bar skills__mongo"></div>
+										<div>
+											<span class="skills__percentage">65%</span>
+										</div>
+									</div>
+									<div class="skills__data">
+										<div class="skills__names">
+											<i class="bx bxl-react skills__icon"></i>
+											<span class="skills__name">REACT</span>
+										</div>
+										<div class="skills__bar skills__react"></div>
+										<div>
+											<span class="skills__percentage">40%</span>
+										</div>
+									</div>
+									<div class="skills__data">
+										<div class="skills__names">
+											<i class="bx bx-data skills__icon"></i>
+											<span class="skills__name">MYSQL</span>
+										</div>
+										<div class="skills__bar skills__mysql"></div>
+										<div>
+											<span class="skills__percentage">80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							 
+						 
+							 
+					 
 
-                    
-            <!--==================== PORTFOLIO 1 ====================-->
-            
-            <div class="portfolio__content grid swiper-slide">
-                <img src="image.png" alt="" class="portfolio__img">
+			<!-- WORK -->
+			<section class="work section" id="work">
+				<h2 class="section-title">Work</h2>
+			
+				<section class="work">
+					<div class="work__container">
+						<!-- Docker Project Card -->
+						<div class="work__card">
+							<img src="assets/img/docker-project.jpeg" alt="Docker Project" class="work__image">
+							<div class="work__content">
+								<h3 class="work__title">Docker Projects & Experiments </h3>
+								<p class="work__description">A collection of containerized experiments, mastering Docker for scalability.</p>
+								<a href="https://github.com/Uttkarshsh/Docker_Experiments" class="work__btn" target="_blank">Visit GitHub</a>
+							</div>
+						</div>
 
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">Journey into Dockers and Containerization</h3>
-                    <p class="portfolio__description">A personal learning journal exploring Docker from basics to advanced containerization, covering commands, images, volumes, networks, best practices, and troubleshooting.</p>
-                    <a href="https://github.com/Uttkarshsh/Docker_Experiments" target="_blank" class="button button--flex button--small portfolio__button">
-                        github
-                        <i class="uil uil-github button__icon"></i>
+						<!-- Decipher Card -->
+						<div class="work__card">
+							<img src="assets/img/Decipher.png" alt="Decipher" class="work__image">
+							<div class="work__content">
+								<h3 class="work__title">ML Model with Evidently</h3>
+								<p class="work__description"> A Streamlit ML app for model training, predictions, and explainability using Evidently AI and SHAP.</p>
+								<div class="work__btn-container">
+									<a href="https://github.com/Uttkarshsh/Docker_Experiments/tree/main/Exp-07" class="work__btn" target="_blank">Visit GitHub</a>
 
-                    </a>
-                </div>
-            </div>
-                </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            
-        
-        </div>
+								</div>
+							</div>
+						</div>
 
-        </section>
+						<!-- Streamlit Dashboard Card -->
+						<div class="work__card">
+							<img src="assets/img/Sql.png" alt="Streamlit Dashboard" class="work__image">
+							<div class="work__content">
+								<h3 class="work__title">Streamlit Dashboard</h3>
+								<p class="work__description">This interactive Streamlit web app provides a seamless experience for data exploration and visualization.</p>
+								<div class="work__btn-container">
+									<a href="https://github.com/Uttkarshsh/Docker_Experiments/tree/main/Exp-05" class="work__btn" target="_blank">Visit GitHub</a>
 
-      
+								</div>
+							</div>
+						</div>
+				
+						<!-- Titanic Survival Prediction Card -->
+						<div class="work__card">
+							<img src="assets/img/titanic.png" alt="Titanic Survival Prediction" class="work__image">
+							<div class="work__content">
+								<h3 class="work__title">Titanic Survival Prediction</h3>
+								<p class="work__description">A machine learning model predicting survival chances on the Titanic using Python and scikit-learn.</p>
+								<div class="work__btn-container">
+									<a href="https://github.com/Uttkarshsh/Docker_Experiments/tree/main/Exp-12" class="work__btn" target="_blank">Visit GitHub</a>
 
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact me</h2>
-            <span class="section__subtitle">Get in touch</span>
-        
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone-alt contact__icon"></i>s
-                        <div>
-                            <h3 class="contact__title">Call me</h3>
-                            <span class="contact__subtitle">(+91) 9456166004</span>
-                        </div>
-                    </div>
-        
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">E-mail</h3>
-                            <span class="contact__subtitle">uttkarshsh12@gmail.com</span>
-                        </div>
-                    </div>
-        
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Dehradun, Uttarakhand</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <form action="https://formspree.io/f/xpwqnyww" method="POST" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="name" class="contact__label">Name</label>
-                            <input type="text" id="name" class="contact__input" name="name" required>
-                        </div>
-        
-                        <div class="contact__content">
-                            <label for="email" class="contact__label">E-mail</label>
-                            <input type="email" id="email" class="contact__input" name="email" required>
-                        </div>
-                    </div>
-        
-                    <div class="contact__content">
-                        <label for="subject" class="contact__label">Subject</label>
-                        <input type="text" id="subject" class="contact__input" name="subject">
-                    </div>
-        
-                    <div class="contact__content">
-                        <label for="message" class="contact__label">Description</label>
-                        <textarea id="message" name="message" cols="0" rows="7" class="contact__input" required></textarea>
-                    </div>
-        
-                    <div>
-                        <button type="submit" class="button button--flex">
-                            Send message
-                            <i class="uil uil-message button__icon"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </section>
-        
-    </main>
+								</div>
+							</div>
+						</div>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
+				</section>
+				
 
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Mttkarsh Sharma</h1>
-                    <span class="footer__subtitle">Cloud Computing Enthusiast</span>
-                </div>
+			<div style="height: 100px;"></div>
+			 
+			 
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#about" class="footer__link">About</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
-                </ul>
+			<!-- CONTACT -->
+			<section class="contact section" id="contact">
+				<h2 class="section-title">Contact</h2>
 
-                <div class="footer__socials">
-                    <a href="https://www.linkedin.com/in/uttkarsh-sharma16/" target="_blank" class="footer__social">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                
-                    <a href="https://github.com/Uttkarshsh" target="_blank" class="footer__social">
-                        <i class="uil uil-github-alt"></i>
-                    </a>
-                </div>
-            </div>
-            <p class="footer__copy">&#169; Uttkarsh Sharma. All rights reserved.</p>
-        </div>
-    </footer>
+				<div class="contact__container bd-grid">
+					<form action="" class="contact__form" id="contact-form">
+						<div class="form-group">
+							<input type="text" placeholder="Name" class="contact__input" id="name" required />
+							<div class="error-message" id="name-error">Please enter your name</div>
+						</div>
+						<div class="form-group">
+							<input type="email" placeholder="Email" class="contact__input" id="email" required />
+							<div class="error-message" id="email-error">Please enter a valid email address</div>
+						</div>
+						<div class="form-group">
+							<textarea id="message" cols="0" rows="10" class="contact__input" placeholder="Your message" required></textarea>
+							<div class="error-message" id="message-error">Please enter your message</div>
+						</div>
+						<button type="submit" class="contact__button button" id="sendMail">Send Message</button>
+						<div class="success-message" id="success-message">Message sent successfully!</div>
+					</form>
+				</div>
+			</section>
+		</main>
 
-    <!--==================== SCROLL TOP ====================-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
-    
+		<!-- FOOTER -->
+		<footer class="footer">
+			<p class="footer__title">Uttkarsh Sharma</p>
+			<div class="footer__social">
+				<a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+				<a href="" class="footer__icon" target="_blank"><i class="bx bxl-instagram"></i></a>
+				<a href="" class="footer__icon" target="_blank"><i class="bx bxl-twitter"></i></a>
+			</div>
+			<p class="footer__copy">&#169; All rigths reserved</p>
+		</footer>
 
-    <!--==================== SWIPER JS ====================-->
-    <script src="./packages/js/swiper-bundle.min.js"></script>
+		<!-- SCROLL REVEAL -->
+		<script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
 
-    <!--==================== MAIN JS ====================-->
-    <script src="./packages/js/main.js"></script>
-</body>
-
+		<!-- MAIN JS -->
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
